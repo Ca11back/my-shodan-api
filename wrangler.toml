@@ -1,0 +1,18 @@
+name = "my-shodan-api"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://hunter.arksec.net"
+
+[[kv_namespaces]]
+binding = "CACHE_KV"
+id = "9a3c42f20b1741828583f1c8e00b401d"
+
+[[rate_limiters]]
+binding = "API_RATELIMITER"
+namespace_id = "3"
+
+[[rate_limiters]]
+binding = "LOGIN_RATELIMITER"
+namespace_id = "6"
